@@ -1,0 +1,20 @@
+# Changing ownership and  Setting file permissions
+
+
+# changed group ownership to webteam for the "var" directory  and everything inside it
+chown :webteam -R ~/linux-server-setup/var/
+
+
+# changed file persmissions to -rwxrw-r--
+chmod 764 ~/linux-server-setup/var/html/index.html
+
+# changed file persmissions to -rwxrw----
+chmod 760 ~/linux-server-setup/var/logs/access.log
+
+# changed file persmissions to -rwxrw----
+chmod 760 ~/linux-server-setup/var/error.log
+
+# changed file persmissions to -rw-------
+chmod 600 ~/linux-server-setup/var/config/db.conf
+ 
+
