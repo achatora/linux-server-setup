@@ -1,0 +1,11 @@
+# User & Group Setup
+
+sudo groupadd webteam 
+sudo useradd -m -s /bin/bash dev01
+sudo useradd -m -s /bin/bash webuser 
+sudo usermod -aG webteam dev01
+sudo usermod -aG webteam webuser 
+
+# created group webteam
+# created users dev01 & websuer
+# added both dev01 & webuser to webteam
